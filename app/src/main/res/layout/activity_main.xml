@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/baby"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="-25dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/btn_loginIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cpb_countdown"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_buttonstyle"
+            android:text="跳过"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="2020年2月7日14点45分\n是个有纪念意义的时刻\n因为我们从soul星球来到微信啦..."
+            android:textColor="#E8EF2E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/noback_title_bar"></include>
+
+        <sdust.project.valentinesday.CountDownProgressBar
+            android:id="@+id/cpb_countdown"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            app:countDown_centerTextColor="#EFEA28"
+            app:countDown_centerTextSize="20dp"
+            app:countDown_circleWidth="5dp"
+            app:countDown_firstColor="#E5E3EF"
+            app:countDown_isShowGradient="true"
+            app:countDown_secondColor="#EDEF31" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

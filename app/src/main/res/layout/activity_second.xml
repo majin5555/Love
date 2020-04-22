@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gift_card">
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/login_buttonstyle"
+            android:text="点我..."
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/Tvcontent"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#5D2C09"
+            android:textSize="25dp" />
+
+
+        <sdust.project.valentinesday.HeartView
+            android:id="@+id/my_view"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <sdust.project.valentinesday.ScrollTextView
+            android:id="@+id/ScrollTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#2AD6EF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

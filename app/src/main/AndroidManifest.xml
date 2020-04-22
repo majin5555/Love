@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sdust.project.valentinesday">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CatchCatIngActivity"></activity>
+        <activity android:name=".CatchCatActivity" />
+        <activity
+            android:name=".AbnerGameCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayGameActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
